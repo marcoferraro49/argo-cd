@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hello
-        image: localhost:5000/app:latest
+        image: localhost:5000/app:v2
         ports:
         - containerPort: 8080
