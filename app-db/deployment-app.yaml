@@ -21,7 +21,5 @@ spec:
         - name: SPRING_DATASOURCE_URL
           value: jdbc:mysql://mysql-db-service:3306/mydatabase
         - name: SPRING_DATASOURCE_USERNAME
-          value: user
-        - name: SPRING_DATASOURCE_PASSWORD
-          value: password
+          value: root
 
