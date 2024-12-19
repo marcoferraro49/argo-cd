@@ -14,12 +14,14 @@ spec:
     spec:
       containers:
       - name: spring-boot
-        image: localhost:5000/app-db:v1
+        image: localhost:5000/app-db:v2
         ports:
         - containerPort: 8080
         env:
         - name: SPRING_DATASOURCE_URL
-          value: jdbc:mysql://mysql-db-service:3306/mydatabase
+          value: jdbc:mysql://mysql-db-service:3306/app_db
         - name: SPRING_DATASOURCE_USERNAME
           value: root
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: rootpassword
 
